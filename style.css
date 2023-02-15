@@ -1,0 +1,41 @@
+* {
+    /* border: 1px solid red; */
+}
+
+.about {
+    background-color: darkgreen;
+    font-family: fantasy;
+    color: goldenrod;
+}
+
+
+.gallery {
+    background-color: darkgoldenrod;
+    padding: 0px;
+    margin: 0px;
+} 
+
+#park-map {
+    background-color: darkgreen;
+    color:blanchedalmond ;
+}
+
+.park-plan {
+    width: 350px;
+    height: auto;
+}
+
+#submit_or_die {
+    border: 1pt solid black;
+    background-color: goldenrod;
+}
+
+#submit_or_die:hover{
+    background-color: darkgoldenrod;
+}
+
+#directions {
+    height: auto;
+    width: 200px;
+}
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Xue_park_CA" content="Xue Park in California"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Xue Neighborhood Park</title>
+</head>
+
+<!-- Your next client is asking for a landing page for a park - this can be a 
+    neighborhood park or national park, up to you. Bootstrap will be required 
+    for this project. Include a navbar, a photo gallery for the park, and a map 
+    image for the park location (this doesn't need to be real). Feel free to use 
+    dribbble.com as a resource for layout ideas.  -->
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+<!-- NavBar -->
+<!-- Not navigating -->
+    <nav class="navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container"> <!-- Why is the navbar title on upper row on large screen? -->
+            <a href="#" class="navbar-brand">Xue Neighborhood Park</a>
+            <button  
+                class="navbar-toggler float-end"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>  
+        </div>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#park-map" class="nav-link">Park Map</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#directions" class="nav-link">Directions</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+        <!-- Not linking correctly; goes to p-tag, not h-tag -->
+    <section>
+        <div class="about row g-4 p-4 pt-5 mt-5" > <!-- top of image cut off by navbar -->
+            <div class="col-sm-12 col-md-6 col-lg-12 about-img">
+                <img class="rounded img-fluid" src="static/images/Rose_garden.jpg" alt="Rose Garden">
+            </div>
+            <h4 class="about-description p-0" id="about">Xue Neighborhood Park... </h4>
+            <p class="about-description">was first established 
+                in 1954 as a ipsum dolor sit amet consectetur adipisicing 
+                elit. Consequatur adipisci minus eaque reprehenderit tempora 
+                delectus doloremque deleniti, sequi, accusamus laborum asperiores 
+                sint quasi nihil, ipsum culpa nemo praesentium quia ipsam unde 
+                quod earum consequuntur! Voluptates non earum deserunt, animi 
+                enim minus tenetur.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+
+    <section id="gallery" class="gallery p-0 p-lg-0 p-sm-0">
+        <div class="container p-5">
+            <h2 class="text-center p-5">Gallery</h2>
+            <div class="row g-4 p-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="static/images/bridge-53769_960_720.jpg" alt="Tall wooden bridge over a still creek in the park" class="img-fluid shadow-lg p-0">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="static/images/children-playing-with-kite.jpeg" alt="Happy children running in park, flying a kite." class="img-fluid shadow-lg p-0">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="static/images/city-park-green.jpeg" alt="Paved pathway in park with streetlamps" class="img-fluid shadow-lg p-0">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="static/images/Rose_garden.jpg" alt="Rose garden" class="img-fluid shadow-lg p-0">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="static/images/summer-sun-lit-green-forest.jpeg" alt="Park bench in the late summer sun" class="img-fluid shadow-lg p-0">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="static/images/LEGO Pirate.jpg" alt="LEGO Pirate holding a treasure map" class="img-fluid shadow-lg p-0">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Park Map & contact Section -->
+
+    <section id="park-map" class="p-10 p-lg-0 lg-10">
+        <div class="d-flex flex-lg-row flex-md-row flex-sm-column">
+            <div class="flex-item text-center align-self-center col-sm-12 col-md-6 col-lg-6"> <!-- should be in center of 3 grids -->
+                <img src="static/images/park-plan.jpg" alt="Map of park" class="d-flex flex-thumbnail text-center rounded park-plan">
+            </div>
+            <div class="flex-item col-sm-12 col-md-6 col-lg-6 p-0"> <!-- at smallest screen, pops back to row -->
+                <div class="container p-0">
+                    <h3 id="contact">Contact us!</h3>
+                </div>
+                <div class="p-10">
+                    <form>
+                        <label>Name:</label><br>
+                        <input type="text" id="name" placeholder="Name..."><br>
+                        <label>Email:</label><br>
+                        <input type="text" id="email" placeholder="email..."><br>
+                        <label>Phone:</label><br>
+                        <input type="text" id="phone" placeholder="Phone..."><br>
+                        <label>Message:</label><br>
+                        <textarea name="message" id="message" cols="40" rows="5"></textarea><br>
+                        <p id="Contact_Type">How would you like us to respond?</p>
+                        <input type="radio" id="emailradio" value="email">
+                        <label for="email">Email</label><br>
+                        <input type="radio" id="phoneradio" value="phone">
+                        <label for="phone">Phone</label><br>
+                        <input type="radio" id="textradio" value="text">
+                        <label for="text">Text</label><br>
+            
+                        <button id="submit_or_die">Submit!</button><br><br>
+                    </form>
+                </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer section -->
+
+    <footer class="bg-dark text-light" >
+        <div class="d-flex flex-lg-row flex-md-row flex-sm-column"> <!-- at smallest screen, pops back to row -->
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="container map-to-park">
+                    <img id="directions" src="static/images/Map to Xue Neighborhood Park.jpg" alt="Map to the park">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <p class="m-0">Xue Neighborhood Park</p>
+                <p class="m-0">55555 West Gibraltar Rd</p>
+                <p class="m-0">Whittier, CA 91733</p>
+                <p class="m-0">555-555-5555</p>
+                <p class="m-0">Xue.Park@gmail.com</p><br>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <p>Xue Neighborhood Park is located at the intersection of the 605 and the 60 freeways.
+                    From the 60 freeway, exit Santa Anita Avenue and go South.
+                    From the 605 freeway, take the Peck Rd exit and go North. Turn Left on Durfee Ave then right on Santa Anita. 
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
